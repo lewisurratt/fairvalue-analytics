@@ -1,0 +1,2 @@
+id,name,trigger,action,active,rationale,created_at,updated_at
+demo-two-loss-lockout,Two-loss lockout,Two consecutive losing trades in one account,Pause new orders for 10 minutes and reassess structure before taking a genuinely new setup.,true,Illustrates how a journal insight can become a measurable behavioral control.,2026-08-18T18:00:00+00:00,2026-08-18T18:00:00+00:00

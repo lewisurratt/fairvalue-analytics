@@ -1,0 +1,4 @@
+Symbol,Side,Quantity,Entry Time,Exit Time,Entry Price,Exit Price,Gross PnL,Fees,Strategy,Setup
+NQ,Long,1,2026-08-19 09:45:00,2026-08-19 09:53:00,23540.25,23550.25,200.00,4.20,opening range,reclaim
+ES,Short,2,2026-08-19 10:18:00,2026-08-19 10:31:00,6460.50,6457.75,275.00,8.40,mean reversion,liquidity sweep
+

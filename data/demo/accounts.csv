@@ -1,0 +1,5 @@
+id,prop_firm,account_type,account_size,status,purchase_cost,current_pnl,profit_target,drawdown_remaining,notes,created_at,updated_at
+acc-001,Apex Trader Funding,Evaluation,50000,Funded,167.00,1840.00,3000.00,1925.00,Synthetic portfolio record.,2026-07-01T14:00:00+00:00,2026-08-18T14:00:00+00:00
+acc-002,Topstep,Performance,50000,Funded,149.00,920.00,2500.00,1480.00,Synthetic portfolio record.,2026-07-12T14:00:00+00:00,2026-08-18T14:00:00+00:00
+acc-003,Lucid Trading,Evaluation,100000,Eval,289.00,-240.00,6000.00,2760.00,Synthetic portfolio record.,2026-08-03T14:00:00+00:00,2026-08-18T14:00:00+00:00
+acc-004,Take Profit Trader,Evaluation,50000,Breached,165.00,-2000.00,3000.00,0.00,Synthetic portfolio record.,2026-06-02T14:00:00+00:00,2026-06-18T14:00:00+00:00

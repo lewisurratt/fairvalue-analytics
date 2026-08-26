@@ -1,0 +1,15 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+data/private/
+data/uploads/*
+!data/uploads/.gitkeep
+data/*.tmp
+tmp/
+
+# Personal bundle adapters contain source-specific mappings and remain local.
+scripts/import_trading_bundle.py
+scripts/import_trading_update.py

@@ -1,0 +1,6 @@
+id,date,type,prop_firm,account_id,amount,notes,created_at
+cash-001,2026-07-25,Payout,Apex Trader Funding,acc-001,1250.00,First funded payout,2026-07-25T18:00:00+00:00
+cash-002,2026-08-12,Payout,Topstep,acc-002,800.00,Performance account payout,2026-08-12T18:00:00+00:00
+cash-003,2026-07-02,Expense,Apex Trader Funding,acc-001,85.00,Activation fee,2026-07-02T18:00:00+00:00
+cash-004,2026-08-01,Expense,Trading tools,,49.00,Market data and platform,2026-08-01T18:00:00+00:00
+

@@ -1,0 +1,20 @@
+id,trade_key,source,account_id,symbol,side,quantity,entry_time,exit_time,entry_price,exit_price,gross_pnl,fees,net_pnl,strategy,setup,session,notes,imported_at
+trd-001,key-001,Tradovate,acc-001,NQ,Long,2,2026-08-04T09:42:00,2026-08-04T09:51:00,23110.25,23122.75,500.00,8.40,491.60,opening range,reclaim,New York AM,,2026-08-04T18:00:00+00:00
+trd-002,key-002,Tradovate,acc-001,NQ,Short,1,2026-08-05T09:34:00,2026-08-05T09:38:00,23201.50,23209.50,-160.00,4.20,-164.20,opening range,failed breakout,New York AM,,2026-08-05T18:00:00+00:00
+trd-003,key-003,Tradovate,acc-001,ES,Long,2,2026-08-05T10:16:00,2026-08-05T10:31:00,6421.25,6425.75,450.00,8.40,441.60,trend continuation,higher low,New York AM,,2026-08-05T18:00:00+00:00
+trd-004,key-004,Tradovate,acc-002,MNQ,Long,5,2026-08-06T09:31:00,2026-08-06T09:36:00,23188.00,23178.50,-95.00,10.50,-105.50,opening range,breakout,New York AM,,2026-08-06T18:00:00+00:00
+trd-005,key-005,Tradovate,acc-002,MNQ,Short,5,2026-08-06T10:02:00,2026-08-06T10:18:00,23172.25,23152.25,200.00,10.50,189.50,mean reversion,liquidity sweep,New York AM,,2026-08-06T18:00:00+00:00
+trd-006,key-006,Tradovate,acc-001,NQ,Long,1,2026-08-07T11:08:00,2026-08-07T11:23:00,23305.50,23322.00,330.00,4.20,325.80,trend continuation,retest,New York AM,,2026-08-07T18:00:00+00:00
+trd-007,key-007,Lucid,acc-003,ES,Short,2,2026-08-10T09:36:00,2026-08-10T09:41:00,6402.50,6405.00,-250.00,8.40,-258.40,opening range,failed breakdown,New York AM,,2026-08-10T18:00:00+00:00
+trd-008,key-008,Lucid,acc-003,ES,Long,2,2026-08-10T10:12:00,2026-08-10T10:28:00,6408.25,6414.00,575.00,8.40,566.60,mean reversion,reclaim,New York AM,,2026-08-10T18:00:00+00:00
+trd-009,key-009,Tradovate,acc-002,MNQ,Long,5,2026-08-11T09:33:00,2026-08-11T09:39:00,23260.00,23248.00,-120.00,10.50,-130.50,opening range,breakout,New York AM,,2026-08-11T18:00:00+00:00
+trd-010,key-010,Tradovate,acc-002,MNQ,Short,5,2026-08-11T10:25:00,2026-08-11T10:42:00,23242.00,23219.50,225.00,10.50,214.50,trend continuation,lower high,New York AM,,2026-08-11T18:00:00+00:00
+trd-011,key-011,Tradovate,acc-001,NQ,Long,1,2026-08-12T10:04:00,2026-08-12T10:19:00,23380.25,23390.00,195.00,4.20,190.80,mean reversion,prior day low,New York AM,,2026-08-12T18:00:00+00:00
+trd-012,key-012,Tradovate,acc-001,ES,Long,2,2026-08-13T13:08:00,2026-08-13T13:25:00,6440.00,6437.75,-225.00,8.40,-233.40,trend continuation,range break,New York PM,,2026-08-13T20:00:00+00:00
+trd-013,key-013,Tradovate,acc-001,ES,Long,2,2026-08-14T13:22:00,2026-08-14T13:49:00,6448.25,6453.50,525.00,8.40,516.60,trend continuation,range break,New York PM,,2026-08-14T20:00:00+00:00
+trd-014,key-014,Tradovate,acc-002,MNQ,Short,5,2026-08-15T09:32:00,2026-08-15T09:35:00,23410.00,23419.50,-95.00,10.50,-105.50,opening range,failed breakdown,New York AM,,2026-08-15T18:00:00+00:00
+trd-015,key-015,Tradovate,acc-002,MNQ,Long,5,2026-08-15T09:38:00,2026-08-15T09:44:00,23422.00,23409.50,-125.00,10.50,-135.50,opening range,breakout,New York AM,,2026-08-15T18:00:00+00:00
+trd-016,key-016,Tradovate,acc-001,NQ,Long,1,2026-08-17T10:18:00,2026-08-17T10:31:00,23460.50,23478.00,350.00,4.20,345.80,trend continuation,higher low,New York AM,,2026-08-17T18:00:00+00:00
+trd-017,key-017,Tradovate,acc-001,NQ,Short,1,2026-08-18T09:44:00,2026-08-18T09:50:00,23512.00,23518.50,-130.00,4.20,-134.20,opening range,failed breakdown,New York AM,,2026-08-18T18:00:00+00:00
+trd-018,key-018,Tradovate,acc-001,NQ,Long,2,2026-08-18T10:07:00,2026-08-18T10:29:00,23524.25,23536.75,500.00,8.40,491.60,trend continuation,reclaim,New York AM,,2026-08-18T18:00:00+00:00
+
