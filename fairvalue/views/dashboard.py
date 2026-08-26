@@ -27,7 +27,10 @@ def render(repo: DataRepository, demo_mode: bool) -> None:
         "A clear view of prop-firm capital, realized cash performance, and the decisions shaping your edge.",
     )
     if demo_mode:
-        st.info("Demo mode is on. Prop-firm names are anonymized in the interface; stored data is unchanged.")
+        st.info(
+            "This public portfolio view uses synthetic records to demonstrate the analysis "
+            "without exposing personal accounts or performance."
+        )
 
     columns = st.columns(5)
     columns[0].metric("Total spend", f"${metrics.total_spend:,.0f}")

@@ -1,16 +1,24 @@
 # FairValue Analytics
 
-A local-first, AI-ready trading journal and behavioral analytics dashboard built with Python, Streamlit, Pandas, and Plotly.
+A personal trading journal and behavioral analytics dashboard built with Python, Streamlit, Pandas, and Plotly.
 
 ![FairValue Analytics public demo](docs/images/overview.png)
 
-## Data science case study
+## Why I built this
 
-FairValue Analytics turns fragmented account records, cash transactions, trading fills, and qualitative journal notes into a single analytical product. The project demonstrates an end-to-end workflow: data modeling, ETL, deterministic deduplication, exploratory analysis, behavioral feature engineering, interactive visualization, testing, and privacy-aware deployment.
+I have been trading for a while, and one problem kept standing out: I could make it through prop-firm evaluations, but reaching a payout consistently was much harder. I wanted to stop relying only on memory and start asking better questions with data.
+
+FairValue Analytics brings my account history, trading executions, expenses, payouts, and journal lessons into one place. My main question is not simply, "Which setup wins most often?" It is, "What changes in my decision-making after a loss, after passing an evaluation, or when funded-account pressure increases?"
 
 The included portfolio dataset is synthetic and illustrative. Personal trading records, screenshots, source reports, and source-specific import adapters are excluded from version control.
 
-FairValue Analytics keeps the data layer separate from the interface: accounts, cash transactions, journal entries, and normalized trades live in repository-backed tables rather than in Streamlit code. The included V1 uses CSV storage for speed; the same repository contract is designed to accept a Supabase/PostgreSQL adapter later.
+## Where I am in my data journey
+
+I am currently studying the fundamentals of data science and machine learning. This project is how I am connecting those classes to a subject I already know and care about. I am learning how to clean data, create useful features, compare groups, visualize results, question small samples, and turn observations into testable rules.
+
+This was built with AI-assisted development. I defined the problem, supplied and checked the trading context, chose the questions and metrics, and decided whether the results made sense from a trader's perspective. AI helped me turn those decisions into a modular application and explain unfamiliar software concepts as I worked through them.
+
+The code keeps data separate from the interface: accounts, cash transactions, journal entries, and normalized trades live in repository-backed tables rather than inside the Streamlit pages. V1 uses CSV storage because it is easy to inspect while I learn. A future version can use Supabase/PostgreSQL without rewriting the dashboard.
 
 ### Questions the product is designed to answer
 
@@ -18,6 +26,8 @@ FairValue Analytics keeps the data layer separate from the interface: accounts, 
 - Which symbols, strategies, and session windows carry the strongest expectancy?
 - Are evaluation passes converting into funded payouts and positive realized ROI?
 - Which repeated journal lessons should become measurable operating rules?
+
+My current working hypothesis is that the largest problem is not one losing trade by itself. It is the deterioration in patience and selectivity after two consecutive losses. The public demo uses synthetic trades to show how I am testing that idea without publishing my personal results.
 
 ## What V1 includes
 
@@ -35,6 +45,18 @@ FairValue Analytics keeps the data layer separate from the interface: accounts, 
 | ![Grouped account portfolio](docs/images/accounts.png) | ![Behavioral analytics](docs/images/analytics.png) |
 
 The repository ships with illustrative sample data so every screen has useful content on first launch. Private imported data lives separately and is excluded from Git.
+
+## What I understand and can explain
+
+- **Rows and columns:** each account, cash transaction, journal entry, and completed trade becomes a structured record.
+- **Cleaning:** timestamps and currency values need consistent types before they can be compared.
+- **Grouping:** Pandas `groupby` lets me compare symbols, strategies, session windows, and behavioral conditions.
+- **Feature engineering:** `after_two_losses` is a new variable created from the order of previous trade results.
+- **Trading metrics:** win rate alone is incomplete, so the dashboard also measures average wins/losses, expectancy, profit factor, and drawdown.
+- **Cash versus performance:** trading P&L measures execution results; realized cash profit measures payouts minus actual prop-firm spending.
+- **Uncertainty:** a pattern in a small personal sample is a hypothesis to test, not proof that a rule will always work.
+
+The beginner-friendly notebook in [`notebooks/01_behavioral_trading_analysis.ipynb`](notebooks/01_behavioral_trading_analysis.ipynb) rebuilds the main behavioral comparison with basic Pandas operations. [`docs/project_walkthrough.md`](docs/project_walkthrough.md) is the plain-language explanation I use to review the project or prepare for an interview.
 
 ## Run locally
 
@@ -74,7 +96,9 @@ fairvalue/views/               Presentation and edit/add interfaces
 data/demo/                     Public-safe illustrative tables
 data/private/                  Personal data and sources (git-ignored)
 sample_imports/                Completed-trade and fill examples
+notebooks/                     Beginner-friendly Pandas analysis
 docs/supabase_schema.sql       Proposed cloud schema
+docs/project_walkthrough.md    Plain-language project explanation
 tests/                         Analytics, importer, and repository tests
 ```
 
@@ -128,6 +152,14 @@ The proposed SQL is in `docs/supabase_schema.sql`. Before cloud deployment:
 ## Privacy and public demos
 
 Public demo mode anonymizes prop-firm names at render time and does not modify the source tables. It is a presentation aid, not an authentication boundary. The repository includes a separate synthetic Demo dataset for public deployment. Do not deploy a personal local instance without authentication, row-level security, and secret management.
+
+## Limitations
+
+- The public records are synthetic and demonstrate the method rather than my personal profitability.
+- My private dataset represents one trader and is still relatively small.
+- The behavioral comparisons are descriptive; they do not establish cause and effect.
+- Fees are not available at the individual-trade level in every export, so some behavioral views use gross P&L.
+- The two-loss lockout should be evaluated on future trades that were not used to form the original hypothesis.
 
 ## Architecture
 
